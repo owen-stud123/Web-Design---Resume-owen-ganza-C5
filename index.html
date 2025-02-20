@@ -9,7 +9,7 @@
 <body>
     <header>
         <nav>
-          <ul>
+            <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -17,38 +17,42 @@
             </ul>
         </nav>
     </header>
-    
-    <section id="about">
-        <h1>Your Name</h1>
-        <p>First-year Computer Science Student</p>
-    </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Python, Java (Basics)</li>
-            <li>Responsive Web Design</li>
-        </ul>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Example Project 1 - <a href="#">GitHub Link</a></p>
-        <p>Example Project 2 - <a href="#">GitHub Link</a></p>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+    <main>
+        <section id="about">
+            <h1>My Personal Info</h1>
+            <p>My names are Owen Ganza. I am a student at African Leadership University and a First-year of BSC Programme.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS (Basics), JavaScript</li>
+                <li>Python (Basics), Java (Basics)</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Example Project 1 - <a href="https://github.com/owen-stud123/alu_regex-data-extraction-owen-stud123.git" target="_blank">Regex Data Extraction</a></p>
+            <p>Example Project 2 - <a href="https://github.com/owen-stud123/hospital_monitoring_group14.git" target="_blank">Hospital Monitoring</a></p>
+            <p>Example Project 3 - <a href="https://github.com/owen-stud123/submission_reminder_app_owen-stud123-.git" target="_blank">Submission Reminder App</a></p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <label for="message">Your Message:</label>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
 
     <script src="script.js"></script>
-    
 </body>
 </html>
