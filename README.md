@@ -20,7 +20,7 @@ Proper Comments
 
 Clone the repository:
 
-git clone https://github.com/yourusername/resume-website.git
+git clone https://github.com/owen-stud123/Web-Design---Resume-owen-ganza-C5.git
 
 Open index.html in your browser.
 
