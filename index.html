@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>Owen Ganza - Resume</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <div class="logo">Owen Ganza</div>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -19,42 +20,46 @@
     </header>
 
     <main>
-        <section id="about">
-            <h1>My Personal Info</h1>
-            <p>My names are Owen Ganza. I am a student at African Leadership University and a First-year of BSC Programme.
-                I am also ambitious in graphics design, and a novis UI UX designer. 
-
-            </p>
+        <section id="about" class="section">
+            <h1>About Me</h1>
+            <p>My name is Owen Ganza. I am a student at African Leadership University, currently in my first year of the BSc program. 
+                I am passionate about graphic design, proficient in Blender for 3D modeling and rendering, and have a keen interest in UI/UX design.</p>
         </section>
 
-        <section id="skills">
+        <section id="skills" class="section">
             <h2>Skills</h2>
             <ul>
-                <li>HTML, CSS (Basics), JavaScript</li>
-                <li>Python (Basics), Java (Basics)</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Python, Java</li>
+                <li>Graphic Design with Blender (3D Modeling & Rendering)</li>
+                <li>UI/UX Design</li>
             </ul>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="section">
             <h2>Projects</h2>
-            <p>Example Project 1 - <a href="https://github.com/owen-stud123/alu_regex-data-extraction-owen-stud123.git" target="_blank">Regex Data Extraction</a></p>
-            <p>Example Project 2 - <a href="https://github.com/owen-stud123/hospital_monitoring_group14.git" target="_blank">Hospital Monitoring</a></p>
-            <p>Example Project 3 - <a href="https://github.com/owen-stud123/submission_reminder_app_owen-stud123-.git" target="_blank">Submission Reminder App</a></p>
+            <ul>
+                <li><a href="https://github.com/owen-stud123/alu_regex-data-extraction-owen-stud123.git" target="_blank">Regex Data Extraction</a></li>
+                <li><a href="https://github.com/owen-stud123/hospital_monitoring_group14.git" target="_blank">Hospital Monitoring System</a></li>
+                <li><a href="https://github.com/owen-stud123/submission_reminder_app_owen-stud123-.git" target="_blank">Submission Reminder App</a></li>
+            </ul>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="section">
             <h2>Contact Me</h2>
             <form class="contact-form">
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" placeholder="Your Name" required>
+                
                 <label for="email">Your Email:</label>
                 <input type="email" id="email" placeholder="Your Email" required>
+                
                 <label for="message">Your Message:</label>
                 <textarea id="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
                 
-            </footer>
+                <button type="submit">Send</button>
+                <div id="form-message"></div>
+            </form>
         </section>
     </main>
 

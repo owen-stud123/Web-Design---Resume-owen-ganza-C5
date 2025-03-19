@@ -1,17 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const contactForm = document.querySelector(".contact-form"); // Use querySelector for class
+    const contactForm = document.querySelector(".contact-form");
     if (contactForm) {
         contactForm.addEventListener("submit", function(event) {
             event.preventDefault();
 
-            let name = document.getElementById("name").value;
-            let email = document.getElementById("email").value;
-            let message = document.getElementById("message").value;
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let message = document.getElementById("message").value.trim();
 
-            // Create or get the message element
             let formMessage = document.getElementById("form-message");
             if (!formMessage) {
-                formMessage = document.createElement('div');
+                formMessage = document.createElement("div");
                 formMessage.id = "form-message";
                 contactForm.appendChild(formMessage);
             }
